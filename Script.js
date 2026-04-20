@@ -75,11 +75,13 @@
   }
 
   function setSeekFill(pct) {
-    seekSlider.style.setProperty('--seek-pct', `${pct}%`);
+    seekSlider.style.background =
+      `linear-gradient(to right, var(--accent) ${pct}%, var(--surface-3) ${pct}%)`;
   }
 
   function setVolFill(pct) {
-    volSlider.style.setProperty('--vol-pct', `${pct}%`);
+    volSlider.style.background =
+      `linear-gradient(to right, var(--accent) ${pct}%, var(--surface-3) ${pct}%)`;
   }
 
   function updateVolIcon(vol) {
