@@ -202,11 +202,7 @@ input[type="range"] {
 .seek-slider {
   flex: 1;
   height: 4px;
-  background: linear-gradient(
-    to right,
-    var(--accent) var(--seek-pct, 0%),
-    var(--surface-3) var(--seek-pct, 0%)
-  );
+  background: var(--surface-3);
   border-radius: 99px;
   transition: height var(--transition);
 }
@@ -337,11 +333,7 @@ input[type="range"] {
 .volume-slider {
   flex: 1;
   height: 4px;
-  background: linear-gradient(
-    to right,
-    var(--accent) var(--vol-pct, 80%),
-    var(--surface-3) var(--vol-pct, 80%)
-  );
+  background: var(--surface-3);
   border-radius: 99px;
   transition: height var(--transition);
 }
